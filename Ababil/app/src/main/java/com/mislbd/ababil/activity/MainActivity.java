@@ -1,4 +1,4 @@
-package com.mislbd.ababil;
+package com.mislbd.ababil.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+
+import com.mislbd.ababil.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

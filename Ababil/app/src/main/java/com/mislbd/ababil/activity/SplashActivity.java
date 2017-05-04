@@ -1,4 +1,4 @@
-package com.mislbd.ababil;
+package com.mislbd.ababil.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.mislbd.ababil.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this, SingUpActivity.class);
+                Intent i = new Intent(SplashActivity.this, SignInActivity.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.push_left_in,
                         R.anim.push_left_out);

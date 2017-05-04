@@ -1,40 +1,42 @@
-package com.mislbd.ababil;
+package com.mislbd.ababil.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class RegisterActivity extends AppCompatActivity {
+import com.mislbd.ababil.R;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class VarifyActivity extends AppCompatActivity {
+
+    @OnClick(R.id.btn_done)
+    public void done(){
+        Intent i = new Intent(VarifyActivity.this, MainActivity.class);
+        startActivity(i);
+        finish();
+        overridePendingTransition(R.anim.push_left_in,
+                R.anim.push_left_out);
+    }
+
+    @Bind(R.id.toolbar)
     Toolbar toolbar;
+
+    @Bind(R.id.tootlbarTitle)
     TextView title;
-    Button register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_varify);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar) ;
-        title = (TextView) findViewById(R.id.tootlbarTitle) ;
+        ButterKnife.bind(this);
         setActionBar();
-
-        register = (Button) findViewById(R.id.registre);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(RegisterActivity.this, VarifyActivity.class);
-                startActivity(i);
-                overridePendingTransition(R.anim.push_left_in,
-                        R.anim.push_left_out);
-                finish();
-            }
-        });
     }
 
     private void setActionBar() {
@@ -44,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("");
 
-        title.setText("Registration");
+        title.setText("Verification");
     }
 
     @Override
@@ -64,4 +66,5 @@ public class RegisterActivity extends AppCompatActivity {
         finish();
         overridePendingTransition(R.anim.push_right_out, R.anim.push_right_in);
     }
+
 }

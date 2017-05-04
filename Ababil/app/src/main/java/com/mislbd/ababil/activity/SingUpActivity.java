@@ -1,10 +1,12 @@
-package com.mislbd.ababil;
+package com.mislbd.ababil.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.mislbd.ababil.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

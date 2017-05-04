@@ -4,12 +4,35 @@
     <!--<color name="colorPrimaryDark">#303F9F</color>-->
     <!--<color name="colorAccent">#FF4081</color>-->
 
-    <color name="colorPrimary">#4CAF50</color>
-    <color name="colorPrimaryDark">#388E3C</color>
+    <!--<color name="colorPrimary">#4CAF50</color>-->
+    <!--<color name="colorPrimaryDark">#388E3C</color>-->
+    <!--<color name="primary_light">#C8E6C9</color>-->
+    <!--<color name="colorAccent">#CDDC39</color>-->
+
+    <color name="colorPrimary">#124D40</color>
+    <color name="colorPrimaryDark">#124D40</color>
     <color name="primary_light">#C8E6C9</color>
-    <color name="colorAccent">#CDDC39</color>
+    <color name="colorAccent">#288A77</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#2C9F3D</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+
+    <color name="intro_page1">#288A77</color>
+    <color name="intro_page2">#AD1457</color>
+    <color name="intro_page3">#E43935</color>
+    <color name="intro_page4">#388E3C</color>
+
+    <color name="btn_bg_color">#288A76</color>
+
+    <color name="tutorial_buttonTextColor">#ffffff</color>
+    <color name="tutorial_subtitleTextColor">#ffffff</color>
+    <color name="tutorial_titleTextColor">#ffffff</color>
+
+
 </resources>
