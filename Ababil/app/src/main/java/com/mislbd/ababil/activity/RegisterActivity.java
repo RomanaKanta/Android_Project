@@ -1,18 +1,30 @@
 package com.mislbd.ababil.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.mislbd.ababil.R;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class RegisterActivity extends AppCompatActivity {
 
+    @OnClick(R.id.sign_up)
+    public void signUp(){
+        Intent i = new Intent(RegisterActivity.this, MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.push_left_in,
+                R.anim.push_left_out);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        ButterKnife.bind(this);
 
 //        toolbar = (Toolbar) findViewById(R.id.toolbar) ;
 //        title = (TextView) findViewById(R.id.tootlbarTitle) ;

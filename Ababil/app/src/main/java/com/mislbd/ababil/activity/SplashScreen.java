@@ -49,12 +49,11 @@ public class SplashScreen extends AwesomeSplash {
 
 
         //Customize Title
-//        configSplash.setTitleSplash("Upholding Social Equity and Justice");
-        configSplash.setTitleSplash("");
+        configSplash.setTitleSplash("Upholding Social Equity and Justice");
         configSplash.setTitleTextColor(R.color.colorPrimaryDark);
         configSplash.setTitleFont("font/ROBOTO-BOLD.TTF");
         configSplash.setTitleTextSize(20f); //float value
-        configSplash.setAnimTitleDuration(50);
+        configSplash.setAnimTitleDuration(20);
         configSplash.setAnimTitleTechnique(Techniques.FadeIn);
 //        configSplash.setTitleFont("fonts/myfont.ttf"); //provide string to your font located in assets/fonts/
 

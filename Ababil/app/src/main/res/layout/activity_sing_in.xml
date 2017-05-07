@@ -29,19 +29,6 @@
         android:layout_margin="@dimen/margin_35"
         >
 
-        <!--<ScrollView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-            <!---->
-            <!---->
-      <!---->
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="vertical"-->
-        <!--&gt;-->
-
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,8 +83,6 @@
 
         />
 
-        <!--</LinearLayout>-->
-        <!--</ScrollView>-->
 
 </LinearLayout>
 

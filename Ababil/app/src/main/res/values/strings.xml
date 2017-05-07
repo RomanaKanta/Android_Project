@@ -37,5 +37,19 @@
     <string name="signup">Sign Up</string>
 
 
+    <string name="report">Report</string>
+    <string name="tool">Tools</string>
+    <string name="connect">Get Connected</string>
+    <string name="setting">Settings</string>
+    <string name="logout">Logout</string>
+
+    <string name="dash">Dashboard</string>
+    <string name="fav">FAVOURITE</string>
+    <string name="transfer">TRANSFER</string>
+    <string name="bill_pay">BILL PAYMENT</string>
+
+    <string name="mobile">Mobile Number</string>
+    <string name="network">Choose Network</string>
+
 
 </resources>

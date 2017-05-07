@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:background="@color/default_circle_indicator_stroke_color"
+        android:layout_height="match_parent">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/capture"
+    android:layout_margin="@dimen/margin_5"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_5"
+        android:src="@drawable/ababillogo2"
+        android:layout_centerVertical="true"
+        />
+
+    <com.mislbd.ababil.widget.AppTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated at 10:45"
+        android:drawableLeft="@mipmap/ic_refresh_black_18dp"
+        android:drawablePadding="@dimen/margin_5"
+        android:padding="@dimen/margin_10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/txt_size_15"
+        android:gravity="center_vertical"
+        />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondary_text"
+        android:layout_margin="@dimen/margin_5"/>
+
+    <com.mislbd.ababil.widget.AppTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:padding="@dimen/margin_10"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/txt_size_16"
+        />
+
+    <com.mislbd.ababil.widget.AppTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1,20,000 tk"
+        android:paddingLeft="@dimen/margin_10"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_size_25"
+        />
+
+    <com.mislbd.ababil.widget.AppTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Transaction"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/txt_size_15"
+        />
+
+    <com.mislbd.ababil.widget.AppTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3,000 TK to electricity Bill"
+        android:paddingLeft="@dimen/margin_10"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/txt_size_16"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_bg"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        >
+
+        <com.mislbd.ababil.widget.AppTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite Transaction"
+            android:textSize="@dimen/txt_size_18"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/txt_padding_10"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_10"
+            android:orientation="horizontal"
+            >
+        <com.mislbd.ababil.widget.AppTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utility Bill Payment"
+            android:drawableLeft="@drawable/chips1"
+            android:drawablePadding="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/secondary_text"
+            android:background="@drawable/txt_bg"
+            android:textSize="@dimen/txt_size_15"
+            android:gravity="center_vertical"
+        />
+
+
+        <com.mislbd.ababil.widget.AppTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up"
+            android:drawableLeft="@drawable/chips2"
+            android:drawablePadding="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/secondary_text"
+            android:background="@drawable/txt_bg"
+            android:textSize="@dimen/txt_size_15"
+            android:gravity="center_vertical"
+            />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_5"
+        >
+
+        <LinearLayout
+            android:id="@+id/receive_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/view_bg"
+            android:layout_marginRight="3dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_redeem_black_48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive Money"
+                android:padding="@dimen/margin_10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get money form \nanywhere"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/txt_size_14"
+                android:layout_marginBottom="@dimen/margin_5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bal_transfer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/view_bg"
+            android:layout_marginLeft="2dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_account_balance_wallet_black_48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance Transfer"
+                android:padding="@dimen/margin_10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick transfer to \nmultiple banks"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/txt_size_14"
+                android:layout_marginBottom="@dimen/margin_5"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_5"
+        >
+
+        <LinearLayout
+            android:id="@+id/top_up"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/view_bg"
+            android:layout_marginRight="3dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_phone_android_black_48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Top-Up"
+                android:padding="@dimen/margin_10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge your mobile \nbanlace faster"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/txt_size_14"
+                android:layout_marginBottom="@dimen/margin_5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/utility"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10"
+            android:background="@drawable/view_bg"
+            android:layout_marginLeft="2dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_description_black_48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utility Bill"
+                android:padding="@dimen/margin_10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Utility bills without \nstanding on a queue"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/txt_size_14"
+                android:layout_marginBottom="@dimen/margin_5"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

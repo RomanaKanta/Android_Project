@@ -20,6 +20,15 @@ public class SignInActivity extends AppCompatActivity {
                 R.anim.push_left_out);
     }
 
+    @OnClick(R.id.sign_in)
+    public void signIn(){
+        Intent i = new Intent(SignInActivity.this, MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.push_left_in,
+                R.anim.push_left_out);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
