@@ -9,15 +9,26 @@
     <!--<color name="primary_light">#C8E6C9</color>-->
     <!--<color name="colorAccent">#CDDC39</color>-->
 
-    <color name="colorPrimary">#124D40</color>
-    <color name="colorPrimaryDark">#124D40</color>
+    <color name="colorPrimary">#20243f</color>
+    <color name="colorPrimaryDark">#14172a</color>
     <color name="primary_light">#C8E6C9</color>
-    <color name="colorAccent">#288A77</color>
+    <color name="colorAccent">#d1cece</color>
     <color name="primary_text">#212121</color>
-    <color name="secondary_text">#757575</color>
+    <color name="secondary_text">#d1cece</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
 
+    <color name="semi_transparent">#aa000000</color>
+    <color name="history_txt_color">#42aee0</color>
+    <color name="his_txt_color">#e0dede</color>
+
+    <color name="bill_bg">#15971a</color>
+    <color name="transfer_bg">#15709a</color>
+    <color name="receive_bg">#8b274c</color>
+    <color name="topup_bg">#968e37</color>
+
+
+    <color name="nav_bg">#292e48</color>
 
     <color name="stpi_default_circle_color">#b3bdc2</color>
     <color name="stpi_default_primary_color">#2C9F3D</color>

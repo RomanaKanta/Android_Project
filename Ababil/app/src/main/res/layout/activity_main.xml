@@ -15,13 +15,9 @@
         android:layout_width="@dimen/nav_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:itemIconTint="@color/drawer_selector"
-        app:itemTextColor="@color/drawer_selector"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_drawer" >
+        android:fitsSystemWindows="true">
 
-
+<include layout="@layout/nav_content"/>
 
     </android.support.design.widget.NavigationView>
 

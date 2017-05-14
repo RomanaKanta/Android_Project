@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/his_txt_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <com.mislbd.ababil.widget.AppTextViewBold
+                android:id="@+id/tran_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="@dimen/txt_size_16"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/txt_padding_5"
+                android:gravity="center"
+                />
+
+            <com.mislbd.ababil.widget.AppTextViewRegular
+                android:id="@+id/tran_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="@dimen/txt_size_14"
+                android:textColor="@color/his_txt_color"
+                android:paddingLeft="@dimen/txt_padding_5"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <com.mislbd.ababil.widget.AppTextViewBold
+            android:id="@+id/tran_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amount"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txt_size_18"
+            android:padding="@dimen/txt_padding_5"
+            android:textColor="@color/history_txt_color"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
