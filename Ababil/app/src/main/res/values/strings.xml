@@ -24,7 +24,7 @@
     <string name="intro_title_2">Mobile Top-Up</string>
     <string name="intro_2">Top up your mobile balance \nanytime, anywhere</string>
     <string name="intro_title_3">Bill Payment</string>
-    <string name="intro_3">Pay utility bills \nwithout any hassle and save time</string>
+    <string name="intro_3">Pay utility bills \nwithout any hassle and save acc_no</string>
     <string name="intro_title_4">And many more..</string>
     <string name="intro_4">Bunch of other goodies \nwaiting for you</string>
 
@@ -36,6 +36,10 @@
     <string name="forgot">Forget Password?</string>
     <string name="signup">Sign Up</string>
 
+
+    <string name="verify_txt">Awesome, Thanks!</string>
+    <string name="varify">We have sent the confirmation code to your email,\nplease check your inbox.</string>
+    <string name="resend">Resend</string>
 
     <string name="report">Report</string>
     <string name="tool">Tools</string>

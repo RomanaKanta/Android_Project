@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include layout="@layout/content_main"/>
+    <include layout="@layout/content_main" />
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -17,10 +17,9 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true">
 
-<include layout="@layout/nav_content"/>
+        <include layout="@layout/nav_content" />
 
     </android.support.design.widget.NavigationView>
-
 
 
 </android.support.v4.widget.DrawerLayout>

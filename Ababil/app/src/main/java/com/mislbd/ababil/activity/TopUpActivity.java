@@ -1,8 +1,7 @@
 package com.mislbd.ababil.activity;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -24,7 +23,8 @@ public class TopUpActivity extends AppCompatActivity {
     @OnClick(R.id.btn_done)
     public void done(){
         finish();
-        overridePendingTransition(R.anim.nothing, R.anim.bottom_down);
+        overridePendingTransition(R.anim.zoom_enter,
+                R.anim.zoom_exit);
     }
 
     @Bind(R.id.toolbar)

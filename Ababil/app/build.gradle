@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.mislbd.ababil"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -39,12 +39,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'design'
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
+    compile 'com.github.florent37:materialtextfield:1.0.7'
 
-
-//    compile ('com.stephentuso:welcome:1.4.1') {
-//        exclude group: 'com.android.support', module: 'support-v4'
-//        exclude group: 'com.android.support', module: 'cardview-v7'
-//        exclude group: 'com.android.support', module: 'design'
-//        exclude group: 'com.android.support', module: 'appcompat-v7'
-//    }
+    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
 }
