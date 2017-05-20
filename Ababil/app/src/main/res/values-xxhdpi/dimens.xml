@@ -4,7 +4,7 @@
     <!-- drawer -->
     <dimen name="divider_height">0.5dp</dimen>
     <dimen name="drawer_heaver_padding">20dp</dimen>
-    <dimen name="nav_drawer_width">280dp</dimen>
+    <dimen name="nav_drawer_width">290dp</dimen>
 
     <!--navigation bar-->
     <dimen name="nav_head_icon">70dp</dimen>

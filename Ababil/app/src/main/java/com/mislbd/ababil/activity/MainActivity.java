@@ -11,6 +11,8 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -18,12 +20,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.mislbd.ababil.R;
+import com.mislbd.ababil.adapter.AccountListAdapter;
 import com.mislbd.ababil.adapter.CustomSpinnerAdapter;
 import com.mislbd.ababil.adapter.ExpandableListAdapter;
+import com.mislbd.ababil.adapter.HistoryListAdapter;
 import com.mislbd.ababil.fragment.FragmentDashBoard;
+import com.mislbd.ababil.fragment.dialog.NotificationDialog;
+import com.mislbd.ababil.modelclass.AccountModel;
+import com.mislbd.ababil.modelclass.HistoryItem;
 import com.mislbd.ababil.modelclass.MenuModel;
 import com.mislbd.ababil.widget.AnimatedExpandableListView;
 import com.mislbd.ababil.widget.CustomTypefaceSpan;
@@ -33,6 +42,7 @@ import java.util.HashMap;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +56,18 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.dashboard)
     Spinner typeSpinner;
 
+    @Bind(R.id.default_layer)
+    LinearLayout defaultLayer;
+
+    @Bind(R.id.account_layer)
+    LinearLayout accLayer;
+
+    @Bind(R.id.recycler_view)
+    RecyclerView accList;
+
+    @Bind(R.id.acc_expand)
+    ImageView accExpand;
+
     @Bind(R.id.navList)
     AnimatedExpandableListView mExpandableListView;
 
@@ -57,6 +79,30 @@ public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
 
+    @OnClick(R.id.notification)
+    public void showNotification() {
+
+        new NotificationDialog().show(fragmentManager, "Notification_Dialog");
+    }
+
+    @OnClick(R.id.header_layer)
+    public void setDrawerContent(){
+
+        if (accLayer.getVisibility()== View.GONE){
+
+            defaultLayer.setVisibility(View.GONE);
+            accLayer.setVisibility(View.VISIBLE);
+            accExpand.setImageResource(R.mipmap.ic_keyboard_arrow_up_white_24dp);
+
+        }else {
+
+            defaultLayer.setVisibility(View.VISIBLE);
+            accLayer.setVisibility(View.GONE);
+            accExpand.setImageResource(R.mipmap.ic_keyboard_arrow_down_white_24dp);
+
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         setAppBar();
         initTypeSpinner();
-
+        setAccountList();
         setFragment(R.string.fav, new FragmentDashBoard());
     }
 
@@ -85,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
 
 //        title.setText(R.string.dash);
 
-
         prepareListData();
         addDrawerItems();
 
@@ -95,6 +140,16 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
 
+    }
+
+    private void setAccountList(){
+        ArrayList<AccountModel> array = new ArrayList<>();
+        array.add(new AccountModel(0, "abcdef@mail,com", "12"));
+        array.add(new AccountModel(0, "ghijkl@mail,com", "2"));
+
+        accList.setLayoutManager(new GridLayoutManager(this, 1));
+
+        accList.setAdapter(new AccountListAdapter(this,array));
     }
 
     private void initTypeSpinner() {
